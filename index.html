@@ -1,1 +1,224 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il Mio CV Online - [Il Tuo Nome]</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Stili CSS base */
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 90%;
+            max-width: 960px;
+            margin: 30px auto;
+            background: #fff;
+            padding: 30px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 30px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.8em;
+            color: #2c3e50;
+            font-weight: 700;
+        }
+        header p {
+            margin: 5px 0;
+            font-size: 1.1em;
+            color: #7f8c8d;
+        }
+        header .contact-info a {
+            color: #3498db;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: 400;
+        }
+        header .contact-info a:hover {
+            text-decoration: underline;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        section h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            font-weight: 700;
+        }
+        .item {
+            margin-bottom: 20px;
+            padding-left: 15px;
+            border-left: 3px solid #eee;
+        }
+        .item h3 {
+            margin: 0 0 5px 0;
+            font-size: 1.4em;
+            color: #34495e;
+        }
+        .item p {
+            margin: 0 0 5px 0;
+            color: #666;
+        }
+        .item ul {
+            list-style: disc;
+            margin-left: 20px;
+            padding: 0;
+        }
+        .item ul li {
+            margin-bottom: 5px;
+        }
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skills-list span {
+            background: #e9f5fd;
+            color: #3498db;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: 400;
+        }
+        footer {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            margin-top: 30px;
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
 
+        /* Media Queries per la responsività */
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+                margin: 20px auto;
+                padding: 20px;
+            }
+            header h1 {
+                font-size: 2.2em;
+            }
+            header p {
+                font-size: 1em;
+            }
+            section h2 {
+                font-size: 1.6em;
+            }
+            .item h3 {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>[Il Tuo Nome e Cognome]</h1>
+            <p>[La Tua Posizione Attuale Desiderata o Professione]</p>
+            <div class="contact-info">
+                <p>
+                    <a href="mailto:tua.email@example.com">tua.email@example.com</a> |
+                    <a href="tel:+39123456789">+39 123 456 789</a> |
+                    <a href="https://linkedin.com/in/tuoprofilo" target="_blank">LinkedIn</a> |
+                    <a href="https://github.com/tuonomeutente" target="_blank">GitHub</a>
+                </p>
+            </div>
+        </header>
+
+        <section id="summary">
+            <h2>Riepilogo Professionale</h2>
+            <p>
+                Sono un/una [Tua Professione], con X anni di esperienza in [Settore/i]. Appassionato/a di [Aree di interesse], con una comprovata capacità di [Competenza 1] e [Competenza 2]. Cerco una posizione che mi permetta di applicare le mie competenze in [Obiettivo specifico] e contribuire al successo del team.
+            </p>
+        </section>
+
+        <section id="experience">
+            <h2>Esperienza Lavorativa</h2>
+            <div class="item">
+                <h3>[La Tua Posizione] a [Nome Azienda]</h3>
+                <p>[Città, Nazione] | [Mese Anno Inizio] – [Mese Anno Fine] (o Presente)</p>
+                <ul>
+                    <li>Descrivi le tue principali responsabilità e risultati ottenuti. Sii specifico e usa verbi d'azione.</li>
+                    <li>Quantifica i tuoi successi quando possibile (es. "Aumentato l'efficienza del 20%").</li>
+                    <li>Elenca 2-3 punti chiave per ogni posizione.</li>
+                </ul>
+            </div>
+            <div class="item">
+                <h3>[Posizione Precedente] a [Nome Azienda Precedente]</h3>
+                <p>[Città, Nazione] | [Mese Anno Inizio] – [Mese Anno Fine]</p>
+                <ul>
+                    <li>Descrizione delle responsabilità e risultati.</li>
+                    <li>...</li>
+                </ul>
+            </div>
+            </section>
+
+        <section id="education">
+            <h2>Istruzione</h2>
+            <div class="item">
+                <h3>[Nome della Tua Laurea/Diploma] - [Nome Università/Istituto]</h3>
+                <p>[Città, Nazione] | [Anno Inizio] – [Anno Fine]</p>
+                <p>Voto finale: [Es. 110/110 e Lode] (Opzionale)</p>
+                <ul>
+                    <li>Corso di studi rilevanti o progetto di tesi (opzionale).</li>
+                </ul>
+            </div>
+            <div class="item">
+                <h3>[Altra Istruzione/Certificazione] - [Nome Istituto]</h3>
+                <p>[Città, Nazione] | [Anno di Completamento]</p>
+                <ul>
+                    <li>Breve descrizione (opzionale).</li>
+                </ul>
+            </div>
+            </section>
+
+        <section id="skills">
+            <h2>Competenze</h2>
+            <div class="skills-list">
+                <span>[Competenza Tecnica 1]</span>
+                <span>[Competenza Tecnica 2]</span>
+                <span>[Competenza Tecnica 3]</span>
+                <span>[Software/Strumento 1]</span>
+                <span>[Software/Strumento 2]</span>
+                <span>[Lingua Straniera - Livello]</span>
+                <span>[Soft Skill 1]</span>
+                <span>[Soft Skill 2]</span>
+                </div>
+        </section>
+
+        <section id="projects" style="display: none;">
+            <h2>Progetti</h2>
+            <div class="item">
+                <h3>[Nome del Progetto]</h3>
+                <p>[Breve descrizione del progetto e il tuo ruolo]</p>
+                <p><a href="[Link al Progetto/Repo GitHub]" target="_blank">Vedi il Progetto</a></p>
+                <ul>
+                    <li>Tecnologie usate: [Elenco]</li>
+                    <li>Risultati raggiunti: [Elenco]</li>
+                </ul>
+            </div>
+            </section>
+
+        <footer>
+            <p>&copy; 2025 [Il Tuo Nome]. Tutti i diritti riservati.</p>
+        </footer>
+    </div>
+</body>
+</html>
